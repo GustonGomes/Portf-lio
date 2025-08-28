@@ -13,11 +13,7 @@
       --light: #fff;
     }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       font-family: 'Poppins', sans-serif;
@@ -31,23 +27,10 @@
       color: var(--light);
       text-align: center;
       padding: 50px 20px 30px;
-      position: relative;
     }
-    header img {
-      max-height: 100px;
-      margin-bottom: 15px;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin: 10px 0;
-    }
-    header p {
-      font-size: 1.2rem;
-      opacity: 0.9;
-    }
-    nav {
-      margin-top: 20px;
-    }
+    header h1 { font-size: 2.5rem; margin: 10px 0; }
+    header p { font-size: 1.2rem; opacity: 0.9; }
+    nav { margin-top: 20px; }
     nav a {
       color: var(--light);
       margin: 0 15px;
@@ -55,22 +38,11 @@
       font-weight: bold;
       transition: color 0.3s;
     }
-    nav a:hover {
-      color: var(--highlight);
-    }
+    nav a:hover { color: var(--highlight); }
 
-    section {
-      padding: 60px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    h2 {
-      text-align: center;
-      margin-bottom: 40px;
-      font-size: 2rem;
-      color: var(--primary);
-    }
+    section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+    h2 { text-align: center; margin-bottom: 40px; font-size: 2rem; color: var(--primary); }
+    h3 { grid-column: 1 / -1; margin: 30px 0 10px; font-size: 1.5rem; color: var(--primary); }
 
     /* SOBRE */
     .sobre {
@@ -80,15 +52,11 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       text-align: center;
     }
-    .sobre p {
-      margin-bottom: 15px;
-      font-size: 1.1rem;
-    }
 
     /* PORTFÓLIO */
     .portfolio-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
     }
     .portfolio-item {
@@ -98,14 +66,8 @@
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
       transition: transform 0.3s, box-shadow 0.3s;
     }
-    .portfolio-item:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-    }
-    .portfolio-item img {
-      width: 100%;
-      display: block;
-    }
+    .portfolio-item:hover { transform: translateY(-8px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
+    .portfolio-item img { width: 100%; display: block; }
 
     /* CONTATO */
     .contato {
@@ -119,30 +81,17 @@
       padding: 25px;
       border-radius: 12px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
     }
-    .contato-card:hover {
-      transform: translateY(-5px);
-    }
-    .contato-card h3 {
-      color: var(--primary);
-      margin-bottom: 10px;
-    }
-    .social {
-      margin-top: 15px;
-    }
+    .contato-card h3 { color: var(--primary); margin-bottom: 10px; }
+    .social { margin-top: 15px; }
     .social a {
-      display: inline-block;
       margin: 0 10px;
-      font-size: 1.1rem;
+      font-weight: bold;
       text-decoration: none;
       color: var(--primary);
-      font-weight: bold;
       transition: color 0.3s;
     }
-    .social a:hover {
-      color: var(--highlight);
-    }
+    .social a:hover { color: var(--highlight); }
 
     /* BOTÃO */
     .btn {
@@ -154,11 +103,8 @@
       font-weight: bold;
       border-radius: 8px;
       text-decoration: none;
-      transition: background 0.3s;
     }
-    .btn:hover {
-      background: #e6a700;
-    }
+    .btn:hover { background: #e6a700; }
 
     footer {
       text-align: center;
@@ -192,100 +138,78 @@
 
   <section id="portfolio">
     <h2>Portfólio</h2>
-    <p>Mideas Sociais Xuness Boutique</p>
     <div class="portfolio-grid">
-      <!-- Mantive as imagens já listadas -->
-         
-      <div class="portfolio-item"><img src="Prancheta14.jpg" alt="Projeto 1"></div>
-      <div class="portfolio-item"><img src="Prancheta18.jpg" alt="Projeto 2"></div>
-      <div class="portfolio-item"><img src="Prancheta15.jpg" alt="Projeto 3"></div>
-      <div class="portfolio-item"><img src="Prancheta1.jpg" alt="Projeto 4"></div>
-      <div class="portfolio-item"><img src="Prancheta17.jpg" alt="Projeto 5"></div>
-      <div class="portfolio-item"><img src="Prancheta4.jpg" alt="Projeto 6"></div>
-      <p>Gj Tetch Criação de logótipo</p>
-      <h1></h1>
-      <h1></h1>
-      <div class="portfolio-item"><img src="592.jpg" alt="Projeto 7"></div>
-      <div class="portfolio-item"><img src="1490.jpg" alt="Projeto 8"></div>
-      <div class="portfolio-item"><img src="cad.jpg" alt="Projeto 9"></div>
-      <h1>Carrosel Instagram</h1>
-      <h1></h1>
-      <h1></h1>
-      <div class="portfolio-item"><img src="carrosel_01.gif" alt="Projeto 10"></div>
-      <div class="portfolio-item"><img src="carrosel_02.gif" alt="Projeto 11"></div>
-      <div class="portfolio-item"><img src="carrosel_03.gif" alt="Projeto 12"></div>
-      <h1>Workshop Academia Bai, Isaf e Delloite, Bussiness Club</h1>
-      <h1></h1>
-      <h1></h1>
-      <div class="portfolio-item"><img src="JUNHO09SEXTA.jpg" alt="Projeto 13"></div>
-      <div class="portfolio-item"><img src="avida.jpg" alt="Projeto 15"></div>
-      <div class="portfolio-item"><img src="isaf22.jpg" alt="Projeto 16"></div>
-      <div class="portfolio-item"><img src="palestraisaf.jpg" alt="Projeto 14"></div>
-      <div class="portfolio-item"><img src="pitc.jpeg" alt="Projeto 16"></div>
-      <div class="portfolio-item"><img src=".jpeg" alt="Projeto 16"></div>
-      <h1>Manipulação de imagens</h1>
-      <h1></h1>
-      <h1></h1>
-      <div class="portfolio-item"><img src="mbaap.jpeg" alt="Projeto 17"></div>
-      <div class="portfolio-item"><img src="ARTEFRES.jpg" alt="Projeto 18"></div>
-      <div class="portfolio-item"><img src="SemTítulo-1.jpg" alt="Projeto 19"></div>
-      <div class="portfolio-item"><img src="vini.jpeg" alt="Projeto 20"></div>
-       <div class="portfolio-item"><img src="WhatsAppImage2025-08-27at11.44.55.jpeg" alt="Projeto 23"></div>
-      <div class="portfolio-item"><img src="jymmy.jpeg" alt="Projeto 20"></div>
-      <div class="portfolio-item"><img src="mbappesuper.jpg" alt="Projeto 20"></div>
-       <div class="portfolio-item"><img src="mbappe5.mp4" alt="Projeto 23"></div>
-      <div class="portfolio-item"><img src="murumbitodos.jpeg" alt="Projeto 20"></div>
-      <h1>Flyer de Festas</h1>
-      <h1></h1>
-      <h1></h1>
-      <div class="portfolio-item"><img src="tshunamifesta.jpg" alt="Projeto 21"></div>
-      <div class="portfolio-item"><img src="festa2.jpeg" alt="Projeto 22"></div>
-      <div class="portfolio-item"><img src="festa4.jpeg" alt="Projeto 33"></div>
-      <div class="portfolio-item"><img src="Librinca.jpg" alt="Projeto 24"></div>
-      <div class="portfolio-item"><img src="MauroFox.jpg" alt="Projeto 25"></div>
-      <div class="portfolio-item"><img src="perturba.jpg" alt="Projeto 26"></div>
-         <div class="portfolio-item"><img src="14ABRIL.jpg" alt="Projeto 24"></div>
-      <div class="portfolio-item"><img src="feira.jpg" alt="Projeto 25"></div>
-      <div class="portfolio-item"><img src="festa3.jpeg" alt="Projeto 26"></div>
-      <h1>identidade visual Irmandade FC</h1>
-      <h1></h1>
-      <h1></h1>
-      <div class="portfolio-item"><img src="IMG_6886g.jpg" alt="Projeto 27"></div>
-      <div class="portfolio-item"><img src="cadvisita.jpg" alt="Projeto 28"></div>
-      <div class="portfolio-item"><img src="cartão.jpg" alt="Projeto 29"></div>
-      <h1>Identidade visual Murumbi FC</h1>
-      <h1></h1>
-      <h1></h1>
-      <div class="portfolio-item"><img src="MURUMBI3.jpg" alt="Projeto 27"></div>
-      <div class="portfolio-item"><img src="bobo.jpg" alt="Projeto 28"></div>
-      <div class="portfolio-item"><img src="tigana.jpeg" alt="Projeto 29"></div>
-      <h1>Identidade visual Sweet Bliss</h1>
-      <h1></h1>
-      <h1></h1>
-      <div class="portfolio-item"><img src="fotodeperfilR1.1.jpg" alt="Projeto 30"></div>
-      <div class="portfolio-item"><img src="105.jpg" alt="Projeto 31"></div>
-      <div class="portfolio-item"><img src="11166.jpg" alt="Projeto 32"></div>
-      <h1>Arte Restaurantes - Restaurante Sabor da Tchissululu e Restaurante Torenia</h1>
-      <h1></h1>
-      <h1></h1>
-      <div class="portfolio-item"><img src="restarante.jpeg" alt="Projeto 30"></div>
-      <div class="portfolio-item"><img src="torenia.jpeg" alt="Projeto 31"></div>
-      <div class="portfolio-item"><img src=".jpg" alt="Projeto 32"></div>
-      <h1>Identidade visual 2C Doçuras</h1>
-      <h1></h1>
-      <h1></h1>
-      <div class="portfolio-item"><img src="11d.jpg" alt="Projeto 32"></div>
-      <div class="portfolio-item"><img src="a333.jpg" alt="Projeto 30"></div>
-      <div class="portfolio-item"><img src="b33.jpg" alt="Projeto 31"></div>
-       <h1>logótipo Boutique Laurusma</h1>
-      <h1></h1>
-      <h1></h1>
-      <div class="portfolio-item"><img src="boutique2.jpg" alt="Projeto 32"></div>
-      <div class="portfolio-item"><img src="placa.jpg" alt="Projeto 30"></div>
-      <div class="portfolio-item"><img src="lb.jpg" alt="Projeto 31"></div>
-      
 
-      <!-- ... resto dos trabalhos ... -->
+      <h3>Midias Sociais - Xuness Boutique</h3>
+      <div class="portfolio-item"><img src="Prancheta14.jpg" alt=""></div>
+      <div class="portfolio-item"><img src="Prancheta18.jpg" alt=""></div>
+      <div class="portfolio-item"><img src="Prancheta15.jpg" alt=""></div>
+      <div class="portfolio-item"><img src="Prancheta1.jpg" alt=""></div>
+      <div class="portfolio-item"><img src="Prancheta17.jpg" alt=""></div>
+      <div class="portfolio-item"><img src="Prancheta4.jpg" alt=""></div>
+
+      <h3>Logótipo - Gj Tetch</h3>
+      <div class="portfolio-item"><img src="592.jpg" alt=""></div>
+      <div class="portfolio-item"><img src="1490.jpg" alt=""></div>
+      <div class="portfolio-item"><img src="cad.jpg" alt=""></div>
+
+      <h3>Carrossel Instagram</h3>
+      <div class="portfolio-item"><img src="carrosel_01.gif" alt=""></div>
+      <div class="portfolio-item"><img src="carrosel_02.gif" alt=""></div>
+      <div class="portfolio-item"><img src="carrosel_03.gif" alt=""></div>
+
+      <h3>Workshops & Eventos</h3>
+      <div class="portfolio-item"><img src="JUNHO09SEXTA.jpg" alt=""></div>
+      <div class="portfolio-item"><img src="palestraisaf.jpg" alt=""></div>
+      <div class="portfolio-item"><img src="avida.jpg" alt=""></div>
+      <div class="portfolio-item"><img src="isaf22.jpg" alt=""></div>
+
+      <h3>Manipulação de Imagens</h3>
+      <div class="portfolio-item"><img src="mbaap.jpeg" alt=""></div>
+      <div class="portfolio-item"><img src="ARTEFRES.jpg" alt=""></div>
+      <div class="portfolio-item"><img src="SemTítulo-1.jpg" alt=""></div>
+      <div class="portfolio-item"><img src="vini.jpeg" alt=""></div>
+      <div class="portfolio-item"><img src="jymmy.jpeg" alt=""></div>
+      <div class="portfolio-item"><img src="mbappesuper.jpg" alt=""></div>
+      <div class="portfolio-item"><img src="murumbitodos.jpeg" alt=""></div>
+
+      <h3>Flyers de Festas</h3>
+      <div class="portfolio-item"><img src="tshunamifesta.jpg" alt=""></div>
+      <div class="portfolio-item"><img src="festa2.jpeg" alt=""></div>
+      <div class="portfolio-item"><img src="festa4.jpeg" alt=""></div>
+      <div class="portfolio-item"><img src="Librinca.jpg" alt=""></div>
+      <div class="portfolio-item"><img src="MauroFox.jpg" alt=""></div>
+      <div class="portfolio-item"><img src="perturba.jpg" alt=""></div>
+
+      <h3>Identidade Visual - Irmandade FC</h3>
+      <div class="portfolio-item"><img src="IMG_6886g.jpg" alt=""></div>
+      <div class="portfolio-item"><img src="cadvisita.jpg" alt=""></div>
+      <div class="portfolio-item"><img src="cartão.jpg" alt=""></div>
+
+      <h3>Identidade Visual - Murumbi FC</h3>
+      <div class="portfolio-item"><img src="MURUMBI3.jpg" alt=""></div>
+      <div class="portfolio-item"><img src="bobo.jpg" alt=""></div>
+      <div class="portfolio-item"><img src="tigana.jpeg" alt=""></div>
+
+      <h3>Identidade Visual - Sweet Bliss</h3>
+      <div class="portfolio-item"><img src="fotodeperfilR1.1.jpg" alt=""></div>
+      <div class="portfolio-item"><img src="105.jpg" alt=""></div>
+      <div class="portfolio-item"><img src="11166.jpg" alt=""></div>
+
+      <h3>Arte Restaurantes</h3>
+      <div class="portfolio-item"><img src="restarante.jpeg" alt=""></div>
+      <div class="portfolio-item"><img src="torenia.jpeg" alt=""></div>
+
+      <h3>Identidade Visual - 2C Doçuras</h3>
+      <div class="portfolio-item"><img src="11d.jpg" alt=""></div>
+      <div class="portfolio-item"><img src="a333.jpg" alt=""></div>
+      <div class="portfolio-item"><img src="b33.jpg" alt=""></div>
+
+      <h3>Logótipo - Boutique Laurusma</h3>
+      <div class="portfolio-item"><img src="boutique2.jpg" alt=""></div>
+      <div class="portfolio-item"><img src="placa.jpg" alt=""></div>
+      <div class="portfolio-item"><img src="lb.jpg" alt=""></div>
+
     </div>
   </section>
 
@@ -293,15 +217,15 @@
     <h2>Contato</h2>
     <div class="contato">
       <div class="contato-card">
-        <h3> Email</h3>
+        <h3>Email</h3>
         <p>celestinogomes122@gmail.com</p>
       </div>
       <div class="contato-card">
-        <h3> Telefone</h3>
+        <h3>Telefone</h3>
         <p>+244 925 878 159</p>
       </div>
       <div class="contato-card">
-        <h3> Redes Sociais</h3>
+        <h3>Redes Sociais</h3>
         <div class="social">
           <a href="https://www.instagram.com/gustondesigner_/?hl=pt">Instagram</a>
           <a href="https://www.facebook.com/gustondesigner">Facebook</a>
@@ -310,7 +234,7 @@
       </div>
     </div>
     <div style="text-align:center; margin-top:30px;">
-      <a href="CvCelestinoGomes2025.pdf" class="btn"> Download CV</a>
+      <a href="CvCelestinoGomes2025.pdf" class="btn">Download CV</a>
     </div>
   </section>
 
@@ -320,4 +244,3 @@
 
 </body>
 </html>
-
